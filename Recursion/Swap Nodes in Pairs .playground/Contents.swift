@@ -2,7 +2,7 @@
 //
 //You may not modify the values in the list's nodes, only nodes itself may be changed.
 //
-// 
+//
 //
 //Example:
 //
@@ -22,12 +22,16 @@ public class ListNode {
 }
 
 
-class SolutionPairs {
+class Solution {
     func swapPairs(_ head: ListNode?) -> ListNode? {
         
-        let temp = head?.val
-        head?.val = head?.next?.val ?? 0
-        head?.next?.val = temp ?? 0
+        if head?.next != nil
+        {
+            let temp = head?.val
+            head?.val = head?.next?.val ?? 0
+            head?.next?.val = temp ?? 0
+        }
+        
         
         if head?.next?.next != nil
         {
