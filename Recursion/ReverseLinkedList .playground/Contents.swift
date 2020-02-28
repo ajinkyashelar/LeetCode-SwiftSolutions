@@ -20,6 +20,7 @@ public class ListNode {
     }
 }
 
+//https://www.geeksforgeeks.org/reverse-a-linked-list/
 class Solution {
     
     func reverseList(_ head: ListNode?) -> ListNode? {
