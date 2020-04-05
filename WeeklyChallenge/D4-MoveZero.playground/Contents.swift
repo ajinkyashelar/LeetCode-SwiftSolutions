@@ -21,3 +21,8 @@ class Solution {
         }
     }
 }
+
+var sol : Solution = Solution()
+var input : [Int] = [0, 3, 1, 0, 12, 1]
+sol.moveZeroes(&input)
+print(input)
