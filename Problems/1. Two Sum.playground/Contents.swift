@@ -41,6 +41,7 @@ class SolutionTests: XCTestCase {
         super.setUp()
         solution = Solution()
     }
+    
     func testResult() {
         let output = [1,0]
         let result = solution.twoSum([2, 7, 11, 15], 9)
