@@ -1,4 +1,5 @@
 import UIKit
+import XCTest
 
 //1. Two Sum
 //
@@ -33,3 +34,18 @@ class Solution {
 
 let sol = Solution()
 print(sol.twoSum([2, 7, 11, 15], 9))
+
+class SolutionTests: XCTestCase {
+    var solution: Solution!
+    override func setUp() {
+        super.setUp()
+        solution = Solution()
+    }
+    func testResult() {
+        let output = [1,0]
+        let result = solution.twoSum([2, 7, 11, 15], 9)
+        XCTAssertEqual(result, output)
+    }
+}
+
+SolutionTests.defaultTestSuite.run()
