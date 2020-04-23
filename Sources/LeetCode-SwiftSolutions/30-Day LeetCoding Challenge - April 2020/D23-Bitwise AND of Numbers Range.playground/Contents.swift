@@ -20,6 +20,7 @@ class Solution {
         }
         
         var result : Int = 0
+        var m = m
         var n = n
         
         while m != n {
