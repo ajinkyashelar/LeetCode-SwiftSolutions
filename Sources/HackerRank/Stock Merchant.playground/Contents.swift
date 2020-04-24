@@ -60,5 +60,6 @@ class Solution {
     }
 }
 
+let sol = Solution()
 print(sol.sockMerchant(n: 7, ar: [1, 2, 2, 1, 3, 1, 2, 2]))
 
